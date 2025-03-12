@@ -1,0 +1,15 @@
+{
+  "name": "ws-chat-app",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "dev": "docker-compose up",
+    "lint": "npm run lint --workspaces",
+    "test": "npm run test --workspaces"
+  }
+} 
